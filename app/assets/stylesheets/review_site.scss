@@ -272,7 +272,8 @@ img {
 }
 
 /* line 3, /Users/taishi/Desktop/Programing/projects/mooovi/app/assets/stylesheets/review_site.scss */
-.text-overflow, .list-inline > li, .table thead th, .btn, a.btn-schedule, .schedulenav > li > a, .schedulenav > li > span, span.btn-schedule, .btn--block, .btn-group--block .btn, .segmentnav > li > a, .segmentnav > li > span, .headernav > li > a, .headernav > li > span, .gridnav > li > a, .gridnav > li > span, .tabnav > li > a, .tabnav > li > span, .dropdown-select .dropdown-select__label, .list-controller, .breadcrumb, .stats--justified .stats__cell, .stats--box .stat__icon {
+.text-overflow, .list-inline > li, .table thead th, .btn, a.btn-schedule, .schedulenav > li > a, .schedulenav > li > span, span.btn-schedule, .btn--block, .btn-group--block .btn, .segmentnav > li > a, .segmentnav > li > span, .headernav > li > a, .headernav > li > span, .gridnav > li > a, .gridnav > li > span, .tabnav > li > a, .tabnav > li > span, .dropdown-select .dropdown-select__
+, .list-controller, .breadcrumb, .stats--justified .stats__cell, .stats--box .stat__icon {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

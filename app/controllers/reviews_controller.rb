@@ -4,7 +4,7 @@ class ReviewsController < RankingController
     @product = Product.find(params[:product_id])
     @review = Review.new
   end
-
+  
   def create
     # Review.create(create_params)
     Review.create(create_params)
