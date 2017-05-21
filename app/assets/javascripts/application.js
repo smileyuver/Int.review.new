@@ -19,7 +19,7 @@
 //= require highcharts/highstock
 
 
-$(function(){
+document.addEventListener("turbolinks:load", function() {
   $('#tab-menu li').on('click', function(){
     if($(this).not('selected')){
       // タブメニュー

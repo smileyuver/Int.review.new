@@ -45,14 +45,11 @@
   border-top-right-radius:5px;
   border-top-left-radius:5px;
   text-align: center;
-  -webkit-animation: anime1 2s ease;
-
 }
 
 .tab-menu li.selected {
   background-color: #fff;
   color: #81D0FE;
-
 }
 
 .contents {
