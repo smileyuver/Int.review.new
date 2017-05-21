@@ -18,9 +18,9 @@
               <li class="logo header" style="float:left;absolute;">
                 <a href="/" >Int.review</a>
               </li>
-            <li class="search header" style="float:left">
+            <li class="search header" style="float:left;position:absolute;top:15px;left:150px;">
                 <%= form_tag('/products/search', method: :get) do %>
-                <input class="search__query header" name="keyword" placeholder="作品名で検索" type="text" value=""><button class="btn-search header" title="検索" type="submit"><i class="icon-search header"></i></button></input>
+                <input class="search__query header" name="keyword" placeholder="企業名で検索" type="text" value=""><button class="btn-search header" title="検索" type="submit"><i class="icon-search header"></i></button></input>
               <% end %>
               <form accept-charset="utf-8" action="/" class="js-search-submit" method="get">
               </form>
@@ -28,9 +28,9 @@
               <li class="entry_button" style="float: right">
                 <a href="/products/search">投稿する</a>
               </li>
-              <li class="my_page_button" style="float:right">
-              <a href="/users/<%= current_user %>">My Page</a>
-              <li class="sign_out_button" style="float:right">
+              <li class="entry_button" style="float:right">
+              <a href="/users/<%=@current_user%>">My Page</a>
+              <li class="entry_button  " style="float:right;">
               <%= link_to 'Sign out', "/users/sign_out", method: :delete %>
               </li>
             </ul>

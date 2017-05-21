@@ -13,11 +13,10 @@
               <ul class="thumbnails thumbnail--movies row grid4 js-lazy-load-images js-my-check-stats" id="list-module">
                 <% @products.each do |product| %>
                   <li class="col">
-                    <a href="/products/<%= product.id %>"><div class="thumbnail__figure" style="background-image:url(<%= product.image_url %>)"></div></a>
-                    <div class="thumbnail__caption">
-                      <h3 class="text-xsmall text-overflow" title="<%= product.title %>">
+                    <a href="/products/<%= product.id %>"><h3 class="text-xsmall text-overflow" title="<%= product.title %>">
                         <%= product.title %>
-                      </h3>
+                      </h3></a>
+                    <div class="thumbnail__caption">
                       <p class="text-small">
                        <% if product.reviews.present? %>
                        <span class="rating-star">
@@ -33,6 +32,7 @@
                   </li>
                 <% end %>
               </ul>
+              <%= paginate(@products)%>
             </div>
           </article>
         </div>

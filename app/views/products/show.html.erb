@@ -7,7 +7,18 @@
             <div class="container">
               <header class="header header--section">
                 <h2 class="text-middle">
-                  <i class="icon-movie color-gray-light"></i><%= @product.title %>
+
+
+
+
+  <div class="resume">
+    <header class="page-header">
+    <h1 class="page-title"><%= @product.title %></h1>
+    <h1 class="page-title"></h1>
+    <small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, October 05, 2014</time></small>
+  </header>
+
+            </div>
                 </h2>
               </header>
               <p style="text-align: center">
@@ -36,17 +47,28 @@
                   <div class="thumbnail__caption">
                     <h3 class="text-xsmall text-overflow" title="Review">
 
-                      </span>ID:<%= review.user.nickname%><small 2014=""></small>
+                    </span>ID:<%= review.user%><small 2014=""></small>
                     </h3>
                     <p class="text-small">
                       <span class="rating-star"><i class="star-actived rate-<%= review.rate%>0"></i></span>
                     </p>
+
+
                   <header>
                     <p class="text-middle">
                       <i class="icon-movie color-blue-light"></i>職種
                     </p>
                     </span><%= review.occupation%><small 2014=""></small>
                   </header>
+
+                        <div class="bs-callout bs-callout-danger text-middle">
+                      <h4>職種</h4>
+                      <p>
+                      <%= review.occupation%>
+                      </p>
+                    </div>
+
+
                   <header>
                     <p class="text-middle">
                       <i class="icon-movie color-blue-light"></i>インターン期間
@@ -162,6 +184,7 @@
                       <i class="icon-movie color-blue-light"></i>このインターンをするメリット
                     </p>
                     </span><%= review.review_merit%><small 2014=""></small>
+
                   </header>
                   </div>
                 </li>

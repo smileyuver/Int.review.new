@@ -49,3 +49,7 @@ gem 'mechanize'
 gem 'devise'
 
 gem 'paperclip'
+
+gem 'kaminari'
+
+gem 'lazy_high_charts'
