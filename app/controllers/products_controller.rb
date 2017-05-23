@@ -1,5 +1,6 @@
 class ProductsController < RankingController
-  before_action :authenticate_user!, only: :search
+  # 検索した後のページ、もしくは投稿ページに遷移する前に、ログインしてなければログインページに遷移するbefore action
+  # before_action :authenticate_user!, only: :search
   def index
     @products = Product.order('id ASC').page(params[:page]).per(20)
     # productsテーブルから最新順に作品を２０件取得する
