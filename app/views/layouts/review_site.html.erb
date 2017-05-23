@@ -29,10 +29,18 @@
 <!--               <li class="entry_button" style="float: right">
                 <a href="/products/search">投稿する</a>
               </li> -->
-              <li class="entry_button" style="float:right">
-              <a href="/users/<%=@current_user%>">My Page</a>
+<!-- マイページボタンをヘッダーから削除 -->
+<!--               <li class="entry_button" style="float:right">
+              <a href="/users/<%=@current_user%>">My Page</a> -->
+
               <li class="entry_button  " style="float:right;">
               <%= link_to 'Sign out', "/users/sign_out", method: :delete %>
+              </li>
+              <li class="entry_button" style="float:right">
+              <%= link_to 'ログイン', "/users/sign_in" %>
+              </li>
+              <li class="entry_button" style="float:right">
+              <%= link_to 'ユーザー登録', "/users/sign_up" %>
               </li>
             </ul>
           </div>
