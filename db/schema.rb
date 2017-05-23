@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170521041019) do
     t.integer  "director",   limit: 4
     t.text     "detail",     limit: 65535
     t.string   "open_data",  limit: 255
+    t.string   "url",        limit: 255
   end
 
   create_table "reviews", force: :cascade do |t|
