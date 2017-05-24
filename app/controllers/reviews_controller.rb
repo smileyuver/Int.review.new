@@ -1,5 +1,6 @@
 class ReviewsController < RankingController
-  before_action :authenticate_user!, only: :new
+  # 新しいレビュー作成時
+  # before_action :authenticate_user!, only: :new
   def new
     @product = Product.find(params[:product_id])
     @review = Review.new
