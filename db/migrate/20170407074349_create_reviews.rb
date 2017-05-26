@@ -1,7 +1,6 @@
 class CreateReviews < ActiveRecord::Migration
   def change
     create_table :reviews do |t|
-      t.string :nickname
       t.string :occupation
       t.string :length
       t.string :often
@@ -22,6 +21,7 @@ class CreateReviews < ActiveRecord::Migration
       t.text :review_merit
       t.integer :product_id
       t.timestamps null: false
+      t.integer :user_id
     end
   end
 end
